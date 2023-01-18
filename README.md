@@ -1,6 +1,5 @@
-#Fixing some shit. Might start uploading files in a week.
-
 # discord-gotify-notification
+## Fixing some shit. Might start uploading files in a week.
 Use gotify as a notification service for discord due to the official discord client notification not working on lineageOS.
 
 ## Prerequisites
