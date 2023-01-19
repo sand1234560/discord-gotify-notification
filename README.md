@@ -1,5 +1,3 @@
-# This bot is not ready to use just yet.
-
 # discord-gotify-notification
 
 Use gotify as a notification service for discord due to the official discord client notification not working on lineageOS.
