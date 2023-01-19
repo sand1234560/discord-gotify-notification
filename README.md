@@ -1,5 +1,4 @@
 # discord-gotify-notification
-## Fixing some shit. Might start uploading files in a week.
 Use gotify as a notification service for discord due to the official discord client notification not working on lineageOS.
 
 ## Prerequisites
@@ -9,12 +8,31 @@ Use gotify as a notification service for discord due to the official discord cli
 
 • Gotify
 
+## Config
+
+The config file is called `perm.json`
+
+**exclusionList**
+excludes messages from inserted IDs
+
+To add more IDs use comma `,`
+
+```
+["696969696969696969, 420420420420420420"]
+```
+
+**excludeBot**
+When set to `true`, messages sent by bots won't be notified.
+
 ## Setting up gotify
 
 make a new directory in `$HOME` folder.
 
-`cd $HOME && mkdir gotify-stuff && cd gotify-stuff`
-
+```
+cd $HOME
+mkdir gotify-stuff
+cd gotify-stuff
+```
 Download the zip with the from https://github.com/gotify/server/releases Releases. (Replace v2.2.4 with a newer version if exists)
 
 `wget https://github.com/gotify/server/releases/download/v2.2.4/gotify-linux-amd64.zip`
@@ -148,3 +166,14 @@ sudo systemctl enable --now gotify-discord-send.timer
 sudo systemctl enable --now gotify-discord-fetch.service
 sudo systemctl enable --now gotify.service
 ```
+
+## On android
+I'm using gotify downloaded from F-Droid on LineageOS 20.0 (Android 13)
+
+I won't go in detail on setting up a domain.
+  
+Points gotify to your domain and specified port and enter your user and password that you've created when setting up gotify.
+
+<img width="50%" alt="android credentials page" src="https://user-images.githubusercontent.com/90265322/213349929-97b8770f-ce84-4e55-8ccb-eeae04d66596.png">
+
+### Done
