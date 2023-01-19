@@ -88,7 +88,7 @@ Description=gotify notification service
 After=multi-user.target
 
 [Service]
-WorkingDirectory=<path-to-gotify-executable>
+WorkingDirectory=<path-to-gotify-stuff>
 ExecStart=bash -c "./gotify-linux-amd64"
 User=root
 
@@ -139,4 +139,12 @@ Unit=gotify-discord-send.service
 
 [Install]
 WantedBy=timers.target
+```
+
+Start the service
+  
+```  
+sudo systemctl enable --now gotify-discord-send.timer
+sudo systemctl enable --now gotify-discord-fetch.service
+sudo systemctl enable --now gotify.service
 ```
