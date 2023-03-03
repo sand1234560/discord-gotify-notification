@@ -1,5 +1,7 @@
 # discord-gotify-notification
 
+## CODE IS STILL NOT READY, PLZ WAIT.
+
 Use gotify as a notification service for discord due to the official discord client notification not working on lineageOS.
 
 ### This project uses discord.js to fetch messages. You can only get messages from servers that you have your bot in.
