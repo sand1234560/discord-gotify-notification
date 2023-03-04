@@ -75,6 +75,14 @@ This will create a new app with a designated `token`
 
 <img width=50% alt="Screen Shot 2566-01-19 at 14 38 05" src="https://user-images.githubusercontent.com/90265322/213383042-203353b3-1c9c-4490-96ae-282dc9f20ac3.png">
 
+## Discord bot-gotify setup
+
+Clone this repo
+
+`git clone https://github.com/sand1234560/discord-gotify-notification.git`
+
+cd into it and edit `perm.json` as mentioned above.
+
 ## Systemd service setup
 
 Create `gotify.service`, `discord-gotify-fetch.service`, `discord-gotify-send.service` and `discord-gotify-send.timer`
