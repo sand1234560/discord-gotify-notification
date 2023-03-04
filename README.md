@@ -4,6 +4,14 @@ Use gotify as a notification service for discord due to the notification of the 
 
 ### This project uses discord.js (discord bot) to fetch messages. You can only get messages from servers that you have your bot in.
 
+### Inner workings
+
+index.js fetches a message from discord and stores it inside store.json -> try.js checks if `store.json` and `compare.json` have the same value.
+
+• `store.json` = `compare.json` -> doesn't send notif
+
+• `store.json` ≠ `compare.json` -> sends notif and store `store.json`'s value inside compare.json so it won't repeatedly send the same notification
+
 ## Prerequisites
 • linux (Tested on Ubuntu 22.04 and Arch 6.2.1)
 
