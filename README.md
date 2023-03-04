@@ -2,7 +2,7 @@
 
 Use gotify as a notification service for discord due to the notification of the official discord client  not working on lineageOS.
 
-### This project uses discord.js to fetch messages. You can only get messages from servers that you have your bot in.
+### This project uses discord.js (discord bot) to fetch messages. You can only get messages from servers that you have your bot in.
 
 ## Prerequisites
 • linux (Tested on Ubuntu 22.04 and Arch 6.2.1)
